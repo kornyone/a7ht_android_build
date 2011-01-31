@@ -21,14 +21,12 @@ PRODUCT_PACKAGES := \
     AccountAndSyncSettings \
     DeskClock \
     AlarmProvider \
-    Bluetooth \
     Calculator \
     Calendar \
-    Camera \
     CertInstaller \
     DrmProvider \
     Email \
-    Gallery3D \
+    Gallery \
     LatinIME \
     Launcher2 \
     Mms \
