@@ -29,7 +29,6 @@ PRODUCT_PACKAGES := \
     Gallery \
     LatinIME \
     Launcher2 \
-    Mms \
     Music \
     Provision \
     Protips \
@@ -48,3 +47,5 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 PRODUCT_BRAND := generic
 PRODUCT_DEVICE := generic
 PRODUCT_NAME := generic
+
+$(call inherit-product, vendor/cyanogen/products/cyanogen_generic.mk)
