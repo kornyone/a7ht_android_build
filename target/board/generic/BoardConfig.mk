@@ -12,6 +12,7 @@ TARGET_CPU_ABI := armeabi
 BOARD_USES_ALSA_AUDIO := true
 BUILD_WITH_ALSA_UTILS := true
 HAVE_CUSTOM_WIFI_DRIVER_2 := true
+BUILD_WITH_FULL_STAGEFRIGHT := true
 
 # no hardware camera
 USE_CAMERA_STUB := true
