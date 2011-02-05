@@ -19,11 +19,7 @@
 # bes used for AOSP builds on various target devices.
 
 PRODUCT_PACKAGES := \
-    OpenWnn \
-    PinyinIME \
-    VoiceDialer \
     libWnnEngDic \
-    libWnnJpnDic \
     libwnndict
 
 # Additional settings used in all AOSP builds
@@ -37,12 +33,12 @@ PRODUCT_LOCALES := en_US
 
 # Pick up some sounds - stick with the short list to save space
 # on smaller devices.
-$(call inherit-product-if-exists, frameworks/base/data/sounds/OriginalAudio.mk)
+#$(call inherit-product-if-exists, frameworks/base/data/sounds/OriginalAudio.mk)
 
 # Get the TTS language packs
-$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
+$(call inherit-product-if-exists, external/svox/pico/lang/PicoLangEnUsInSystem.mk)
 
 # Get the list of languages.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
